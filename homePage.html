@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body onload="displayUserWelcome()">
+  <ul id='nav-bar'>
+    <li><a class="active" href="homePage.html">uPlanner</a></li>
+    <li><a class="login" href="landingPage.html">Log Out</a></li>
+  </ul>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li>
+          <a href="homePage.html">Dashboard</a>
+        </li>
+        <li>
+          <a onclick="checkType()">Events Overview</a>
+        </li>
+        <li>
+          <a href="messages.html">Messages</a>
+        </li>
+        <li>
+          <a href="aboutPage.html">About</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div id="welcome">
+        </div>
+        <div id="messagePart">
+
+      </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+</body>
+</html>

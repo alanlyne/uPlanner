@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script src="script.js"></script> 
+	</head>
+	<body>
+		<ul>
+     		<li><a class="active" href="landingpage.html">uPlanner</a></li>
+     		<li><a class="login" href="login.html">Login</a></li>
+     		<li><a class="signup" href="signup.html">Sign Up</a></li>
+    	</ul>
+
+    	<div class = "content">
+    		<div class = "contain">
+    			<form onsubmit="event.preventDefault(); doLogin();">
+    				<div class="container" id="container">
+					<h1>Login Page</h1>
+					<p>Please enter your details to log in!</p>
+
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder = "Please enter your email" name="email" id="email" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder = "Please enter your password" name="psw" id="psw" required>
+
+					<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember me
+					</label>
+
+					<div class= " clearfix">
+						<button type = "submit" class="lin">Login</button>
+					</div>
+					<p> If you do not have an account and wish to sign up click <a href="signup.html" style = "color:dodgerblue">here!</a></p></div>
+
+					
+
+    			</form>
+    		</div>
+    	</div>
+	</body>
+
+</html>

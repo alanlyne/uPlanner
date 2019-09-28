@@ -1,0 +1,432 @@
+body{
+  padding:0px;
+  margin: 0;
+  width:100%;
+  height:100%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#header{
+  font-size: 5vh;
+  padding-top: 4%;
+  padding-left: 4%;
+}
+#subheader{
+  font-size: 3vh;
+  padding-left: 5%;
+  padding-right:5%;
+
+}
+
+#welcome{
+  font-size: 5vh;
+  padding-top: 4%;
+  padding-left: 4%;
+}
+#messagePart{
+  font-size: 3vh;
+  padding-left: 5%;
+  padding-right:5%;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:8.5vh;
+}
+ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover{
+  text-decoration: none;
+  color: #a9c4f5;
+  background: rgba(255, 255, 255, 0.2);
+}
+.active {
+  float:left;
+}
+.login{
+float:right;
+}
+.signup{
+float:right;
+}
+
+.content{
+padding:20px;
+margin-top:30px;
+height:85vh;
+background-color: #333;
+background-image:linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),url("img1.jpg");
+  background-size: 100% 100%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.pad{
+  margin-top:3%;
+}
+.contain{
+  text-align: center;
+}
+.container{
+  text-align: center;
+  margin-top:2%;
+  height:75vh;
+  border-radius: 30px;
+  padding:1% 5%;
+  padding-left: 6.5%;
+  display: inline-block;
+  background-color: #F5F5F5;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.head{
+  /*background-color: #333;*/
+  margin-top:10%;
+  margin-left: 9%;
+  font-size:10vh;
+  color:#fff;
+}
+.text{
+  padding-top:5%;
+  padding-left: 9%;
+  font-size:6vh;
+  color:#fff;
+}
+.buttons{
+  padding-top:5%;
+  text-align:center;
+}
+button{
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+.su{
+  background-color: #a9c4f5;
+  color:#fff;
+}
+.lin{
+  background-color: #e7e7e7;
+  color:#000;
+}
+form{
+  display: block;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:4vh
+  height:70vh;
+}
+.formSame{
+  text-align: center;
+  display: block;
+  float: left;
+}
+label{
+  display:block;
+  text-align: center;
+}
+input[type=text]{
+  border: none;
+  border-bottom: 2px solid #a9c4f5;
+}
+input[type=password]{
+  border: none;
+  border-bottom: 2px solid #a9c4f5;
+  width:inherit;
+}
+#wrapper {
+  padding-top:8.5vh;
+  width: 100%;
+  height: 91.5vh;
+  background-color: #a9c4f5;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  /*left: 250px;*/
+  width: 20%;
+  height: 100%;
+
+  background: #000;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height:96.1vh;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #a9c4f5;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#sidebar-wrapper {
+  width: 250px;
+}
+#page-content-wrapper {
+background-color: #fff;
+ position: relative;
+ margin-left:250px;
+ border: 15px solid #a9c4f5;
+ border-radius: 55px;
+ height: 86vh;
+
+}
+
+
+
+
+/*---------------------------*/
+   /* Read Users */
+   /*---------------------------*/
+   #user-list{
+    display: inline;
+    padding:0;
+    width:20%;
+    float:left;
+    margin-top:-5%;
+    margin-left: 20%;
+    border:1px solid #a9c4f5;
+   }
+
+   #user-list h2 {
+    padding:10px;
+    margin:0;
+    color:#333;
+   }
+
+   #user-list li {
+    padding:5px 10px;
+    border-top:1px solid #a9c4f5;
+    cursor: pointer;
+    color:#333;
+    font-style: italic;
+    list-style: none
+   }
+
+   #user-list li:hover {
+    background: #a9c4f5;
+   }
+
+   #user-detail {
+    float: right;
+    width:30%;
+    margin-top: -5%;
+    margin-right: 27.75%;
+    body, h1, h2 {
+        margin:0;
+        padding:0;
+       }
+       body {
+        background:#a9c4f5;
+        font-family: Arial, sans-serif;
+       }
+       h1 {
+        padding:20px 20px;
+        background:#a9c4f5;
+       }
+
+       /*---------------------------*/
+       /* Read Users */
+       /*---------------------------*/
+       #userList {
+
+        margin:0;
+        padding:0;
+        width:30%;
+        float:left;
+        border:1px solid #a9c4f5;
+       }
+
+       #userList h2 {
+        padding:10px;
+        margin:0;
+        color:#333;
+       }
+
+       #userList li {
+        padding:5px 10px;
+        border-top:1px solid #a9c4f5;
+        cursor: pointer;
+        color:#333;
+        font-style: italic;
+       }
+
+       #userList li:hover {
+        background: #a9c4f5;
+       }
+
+       #userDetail {
+        float:left;
+        width:40%;
+        margin:10px;
+        margin-left:0;
+        padding:10px;
+        border:1px solid #a9c4f5;
+        color:black;
+       }
+
+       /* Add User Module */
+    #add-user-module {
+        width:30px;
+        margin-bottom: 1px;
+        margin-left: 10px;
+        margin-top:10px;
+       }
+
+       #add-user-module #open-add-user-form-btn {
+       background: #a9c4f5;
+       font-size: 1.5em;
+       color: #333;
+       padding-bottom: 5px;
+       }
+
+       #add-user-module form {
+        position: absolute;
+        padding: 10px;
+        width: 150px;
+        background-color: #e1e1e1;
+        border: 1px solid #999;
+        display: none;
+       }
+
+       #add-user-module form input {
+        width: 97%;
+        margin: 2px 0;
+       }
+
+       #add-user-module form button {
+        background: #a9c4f5;
+        font-size: 1em;
+        padding: 0px 10px;
+        color: #333;
+        margin-top: 10px;
+       }
+
+
+       #add-user-module:hover form {
+        display: block;
+       }
+    margin:10px;
+    margin-left:0;
+    padding:10px;
+    color:black;
+    padding-top:0;
+   }
+
+
+   /* Add User Module */
+   #add-user-module {
+       width:30px;
+       margin-bottom: 1px;
+       margin-left: 10px;
+       margin-top:10px;
+   }
+
+   #add-user-module #open-add-user-form-btn {
+       background: #a9c4f5;
+       font-size: 1.5em;
+       color: #333;
+       padding-bottom: 5px;
+   }
+
+   #add-user-module form {
+       position: absolute;
+       padding: 10px;
+       width: 150px;
+       background-color: #e1e1e1;
+       border: 1px solid #999;
+       display: block;
+   }
+
+   #add-user-module form input {
+       width: 97%;
+       margin: 2px 0;
+   }
+
+   #add-user-module form button {
+       background: #a9c4f5;
+       font-size: 1em;
+       padding: 0px 10px;
+       color: #333;
+       margin-top: 10px;
+   }
+
+
+   #add-user-module:hover form {
+       display: block;
+   }
+
+
+   /*Edit*/
+   #edit-user-module {
+       display: none;
+       float:right;
+       background-color: #e1e1e1;
+       border: 1px solid #999;
+       top:149px;
+       left: 160px;
+       padding: 10px;
+       width: 150px;
+   }
+
+   #user-list li:hover~#edit-user-module {
+       display: none;
+   }
+
+
+   #edit-user-module form button {
+       background: #a9c4f5;
+       font-size: 1em;
+       padding: 0px 10px;
+       color: #333;
+       margin-top: 10px;
+   }
+   .edit-user-input{
+     width:95%
+   }
+   .user-input{
+     width:95%
+   }
+
+   h1{
+     font-size: 5vh;
+     margin-left:3%
+   }

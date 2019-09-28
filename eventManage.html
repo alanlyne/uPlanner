@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body onload="readUserData()">
+  <ul id="na">
+    <li><a class="active" href="homePage.html">uPlanner</a></li>
+    <li><a class="login" href="landingpage.html">Log Out</a></li>
+
+  </ul>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li>
+          <a href="homePage.html">Dashboard</a>
+        </li>
+        <li>
+          <a onclick="checkType()">Events Overview</a>
+        </li>
+        <li>
+          <a href="messages.html">Messages</a>
+        </li>
+        <li>
+          <a href="aboutPage.html">About</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <h1>Edit & View Your Events..</h1>
+
+
+    <!-- add user module -->
+    <section id="add-user-module" >
+        <button class="btnCreate" id="open-add-user-form-btn">Create New Event</button>
+        <form>
+            <h2>Add Event</h2>
+            Event Name:<br>
+            <input type='text' data-key='Event Name' class='user-input'><br>
+            Date:<br>
+            <input type='text' data-key='Date' class='user-input'><br>
+            Details:<br>
+            <input type='text' data-key='Details' class='user-input'><br>
+            <button type='button' id="add-user-btn" onclick="addUserBtnClicked()">Add Event</button>
+        </form>
+    </section>
+
+    <!-- edit user module -->
+    <section id="edit-user-module">
+        <form>
+            <h2>Edit Event</h2>
+            <input type="hidden" class="edit-userid">
+            Event Name:<br>
+            <input type='text' data-key='Event Name' class='edit-user-input'><br>
+            Date:<br>
+            <input type='text' data-key='Date' class='edit-user-input'><br>
+            Details:<br>
+            <input type='text' data-key='Details' class='edit-user-input'><br>
+            <button type='button' id="edit-user-btn">save</button>
+        </form>
+    </section>
+
+
+    <!-- show user module -->
+    <div id="user-list"></div>
+    <div id="user-detail"></div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+
+
+</body>
+</html>

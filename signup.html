@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="landingpage.html">uPlanner</a></li>
+    <li><a class="login" href="login.html">Login</a></li>
+    <li><a class="signup" href="signup.html">Sign Up</a></li>
+  </ul>
+  <div class="content">
+    <div class="contain">
+      <form onsubmit="event.preventDefault(); doRegister();">
+        <div class = "container">
+          <h1>Sign Up </h1>
+          <div class='formSame'>
+            <label for="firstName"><b>First Name</b></label>
+            <input type="text" placeholder="Please enter your first name" name="firstName" id="firstName" required>
+          </div>
+          <label for="surname"><b>Surname</b></label>
+          <input type="text" placeholder="Please enter your surname" name="surname" id="surname" required>
+
+          <div style="clear:both;">&nbsp;</div>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder = "Please enter your email" name="email" id="email" required>
+          <div style="clear:both;">&nbsp;</div>
+          <div class='formSame'>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder = "Please enter your password" name="psw" id="psw" required>
+          </div>
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder = "Please re-enter your password" name="psw-repeat" required>
+
+          <div style="clear:both;">&nbsp;</div>
+
+          <label for="type"><b>User type</b></label>
+
+          <div class="formSame">
+            <input type="radio" id="plannerType" name="userType" value="planner">Planner<br>
+          </div>
+          <input type="radio" id="clientType" name="userType" value="client">Client<br>
+          <div style="clear:both;">&nbsp;</div>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember me
+          </label>
+
+          <div class= " clearfix">
+            <button type = "button" class="lin">Cancel</button>
+            <button type = "submit" class="su">Sign Up</button>
+          </div>
+          
+          <p style="font-size:0.75vw;">Already have an account? Sign in <a href="login.html" style = "color:dodgerblue">here</a></p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
